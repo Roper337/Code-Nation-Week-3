@@ -1,0 +1,133 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Image</title>
+  <style>
+    /* Optional: Add some styling to the image for better visibility */
+    #myImage {
+      max-width: 100%;
+      transition: opacity 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <img id="myImage" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" alt="Sample Image">
+  <button id="toggleButton" onclick="toggleImage()">Toggle Image</button>
+
+  <script>
+    // Function to toggle the visibility of the image
+    function toggleImage() {
+      const myImage = document.getElementById('myImage');
+
+      // Toggle the visibility by changing the opacity
+      if (myImage.style.opacity === '0') {
+        myImage.style.opacity = '1';
+      } else {
+        myImage.style.opacity = '0';
+      }
+    }
+  </script>
+</body>
+</html> -->
+
+//**************************************************************************************************
+
+<!-- //Task 2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Image Source</title>
+</head>
+<body>
+  <input type="text" id="imageUrlInput" placeholder="Enter Image URL">
+  <button id="changeImageButton" onclick="changeImage()">Change Image</button>
+  <img id="myImage" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" alt="Sample Image">
+
+  <script>
+    function changeImage() {
+      const imageUrlInput = document.getElementById('imageUrlInput');
+      const myImage = document.getElementById('myImage');
+
+      // Get the value from the input box
+      const newImageUrl = imageUrlInput.value;
+
+      // Change the source of the image
+      myImage.src = newImageUrl;
+
+      // Optional: Clear the input box after changing the image
+      imageUrlInput.value = '';
+    }
+  </script>
+</body>
+</html> -->
+
+//**************************************************************************************************
+
+
+<!-- Activity 3
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Text Color</title>
+</head>
+<body>
+  <h1 id="myHeading">Change Me!</h1>
+  <input type="text" id="colorInput" placeholder="Enter Color">
+  <button id="changeColorButton" onclick="changeColor()">Change Color</button>
+
+  <script>
+    function changeColor() {
+      const colorInput = document.getElementById('colorInput');
+      const myHeading = document.getElementById('myHeading');
+
+      // Get the value from the input box
+      const newColor = colorInput.value;
+
+      // Change the text color of the heading
+      myHeading.style.color = newColor;
+
+      // Optional: Clear the input box after changing the color
+      colorInput.value = '';
+    }
+  </script>
+</body>
+</html> -->
+
+//**************************************************************************************************
+
+
+<!-- Activity 4
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Coordinates</title>
+</head>
+<body>
+  <p id="coordinates">Click anywhere on the page to get coordinates.</p>
+
+  <script>
+    document.addEventListener('click', function(event) {
+      // Get the x and y coordinates from the event object
+      const x = event.clientX;
+      const y = event.clientY;
+
+      // Display the coordinates in the paragraph
+      const coordinatesParagraph = document.getElementById('coordinates');
+      coordinatesParagraph.textContent = `Clicked at X: ${x}, Y: ${y}`;
+    });
+  </script>
+</body>
+</html>-->
+
+
